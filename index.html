@@ -25,7 +25,13 @@
          
 <tr valign = "top">
 <td bgcolor = "#aaa" width = "20%">
-<b>FACILITIES :- </b><br />
+
+<p><b><em><center>
+<span style = "color:red">FACILITIES</span>
+</center>
+</em></b></p>
+<hr>
+<b>
 Transportation <br/>
 Sports<br/>
 Qualified Teachers <br/>
@@ -33,6 +39,7 @@ Library <br/>
 Hostel <br/>
 Canteen <br/>
 Digital Class Room <br/>
+</b>
 
 <td bgcolor = "#b5dcb3" height = "200" width = "60%">
 </td>
@@ -50,13 +57,42 @@ alert ("Congratulation Your First Step Completed");
 </script>
 
 <td bgcolor = "#aaa" width = "20%">
-<b>Registration</b><br />
-First Name: <input type="text" name="FirstName"> <br/>
-Last Name: <input type="text name="LastName"> <br/>
-<label for="inputdob"> Date of Birth: </label> <input type="date"> <br/>
-Email Id: <input type="text" name="EmailId"> <br/>
-Mobile No.: <input type="text" name="MobileNo."> <br/>
-<input type="button" value="Submit" onClick="sayHello()">
+
+<form action="action_page.php" style="border:1px solid #ccc">
+<div class="container">
+
+<p><b><em><center>
+<span style = "color:red">REGISTRATION</span>
+</center>
+</em></b></p>
+<hr>
+<label><b>Username</b></label>
+<input type="text" placeholder="Enter Username" name="username" required>
+
+<label><b>Password</b></label>
+<input type="password" placeholder="Enter Password" name="psw" required>
+
+<label><b>Repeat Password</b></label>
+<input type="password" placeholder="Repeat Password" name="psw-repeat" required> 
+
+<label><b>Mobile No.</b></label>
+<input type="number" placeholder="Enter Mobile No." name="mob" required>
+
+<label for="inputdob"> Date of Birth: </label> <input type="date">
+
+<label><b>Email ID</b></label>
+<input type="text" placeholder="Enter Email Id" name="username" required>
+
+<br/>
+
+<label><input type="checkbox" checked="checked" style="margin-bottom:15px"> Remember me
+</label>
+
+<div class="clearfix">
+<button type="button" class="cancelbtn">Cancel</button>
+<button type="submit" class="signupbtn">Sign Up</button>
+<br/>
+</div>
 </td>
 </tr>
 </form>
