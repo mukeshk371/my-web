@@ -2,6 +2,22 @@
 
 <head>
 <title>My web page</title>
+</head>
+
+<script type="text/javascript">
+	function onHyperlinkClick(name){
+		var contentDiv = document.getElementById("content");
+		var fileName;
+		if(name == 'gallery'){
+			fileName = 'views/gallery/gallery.html'
+		} else if(name == 'contact'){
+			fileName = 'views/contact/contact_us.html'
+		} else if(name == 'about'){
+			fileName = 'views/about/about.html'
+		}
+		contentDiv.innerHTML='<embed type="text/html" width ="100%" height = "100%" src='+fileName+'>';
+	}
+</script>
 
 <table width = "100%" height="10%" border = "10">       
 <tr>
@@ -10,17 +26,17 @@
 <div style="float:right">R. K. S. SR. SEC. SCHOOL, MUZAFFARPUR</div><br/>
 <div style= "float:right" color="red"><tt><i>नास्ति विद्या समं चक्षु नास्ति सत्य समं तप:</i></tt><br/>
 <center>
-<button> <a href = "views/home/home.html"> <b>HOME</b> </button> 
-<button> <a href = "views/gallery/gallery.html"> <b>GALLERY</b> </button> 
-<button> <a href = "views/contact/contact_us.html"> <b>CONTACT</b> </button>
-<button> <a href = "views/about/about.html"> <b>ABOUT</b> </button> </a>
+<button> <a href = "index.html"> <b>HOME</b> </button> 
+<button> <a href = "#" onclick="onHyperlinkClick('gallery')"> <b>GALLERY</b> </button> 
+<button> <a href = "#" onclick="onHyperlinkClick('contact')"> <b>CONTACT</b> </button>
+<button> <a href = "#" onclick="onHyperlinkClick('about')"> <b>ABOUT</b> </button> </a>
 </center>
 </h1>
 </td>
 </tr>
 <br/>
 
-<table width = "100%" border = "10">        
+<table width = "100%" border = "5"  height = "300px">        
 <tr valign = "top">
 <td bgcolor = "#aaa" width = "20%">
 
@@ -39,28 +55,23 @@
 <a href = "views/home/home.html">Digital Class Room <br/>
 </b>
 
-<td bgcolor = "#b5dcb3" height = "200" width = "60%">
-<marquee behavior="scroll" direction="up" valign="center" height="350" scrollamount="10">
-<center>
-  <img src="resources/images/img (1).jpg" width = "530px" height= "400px">
-  <img src="resources/images/img (2).jpg" width = "530px" height= "400px">
-  <img src="resources/images/img (3).jpg" width = "530px" height= "400px">
-  <img src="resources/images/img (4).jpg" width = "530px" height= "400px">
-  <img src="resources/images/img (5).jpg" width = "530px" height= "400px">
-  <img src="resources/images/img (6).jpg" width = "530px" height= "400px">
-  <img src="resources/images/img (7).jpg" width = "530px" height= "400px">
-  <img src="resources/images/img (8).jpg" width = "530px" height= "400px">
-  <img src="resources/images/img (9).jpg" width = "530px" height= "400px">
-  </center>
-  </marquee>
+<td bgcolor = "#b5dcb3" width = "60%" id = 'content'>
+	<marquee behavior="scroll" direction="up" valign="center" height="350" scrollamount="10">
+		<center>
+		  <img src="resources/images/img (1).jpg" width = "530px" height= "400px">
+		  <img src="resources/images/img (2).jpg" width = "530px" height= "400px">
+		  <img src="resources/images/img (3).jpg" width = "530px" height= "400px">
+		  <img src="resources/images/img (4).jpg" width = "530px" height= "400px">
+		  <img src="resources/images/img (5).jpg" width = "530px" height= "400px">
+		  <img src="resources/images/img (6).jpg" width = "530px" height= "400px">
+		  <img src="resources/images/img (7).jpg" width = "530px" height= "400px">
+		  <img src="resources/images/img (8).jpg" width = "530px" height= "400px">
+		  <img src="resources/images/img (9).jpg" width = "530px" height= "400px">
+		  </center>
+	  </marquee>
 </td>
 
 <center><b>Welcome To R. K. S. Senior Secondary School</b></center>
-Education devoid of human values is worthless and it is. Therefore, our sincere effort to inculcate in students the treats of good human beings and turn out true gentlemen or ladies of high caliber and character imbibed with all the virtues of head and heart. We are of the view “ A good institution gains recognition through the qualities imbibed by its students and not from its infrastructure.”
-A very tough time awaits our youth when they move out to enter upon a public life. Only those who have iron determination can achieve success and face the challenges of future boldly. In this age of cut-throat completion, there is no room for shirkers. Opportunities keep knocking at the doors of everyone.
-Only the bold with positive attitude and sustained effort are able to grab them. So to be ahead of the lakhs appearing in a competition, they have to be mentally and physically tough and need to have dagged determination with capacity for hard work. Let us remember “god helps those who help themselves.”
-<br/>
-</div>
 
 <td bgcolor = "#aaa" width = "20%">
 
