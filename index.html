@@ -5,6 +5,8 @@
 
 <link rel="stylesheet" type="text/css" href="resources/css/home.css">
 <link rel="stylesheet" type="text/css" href="resources/css/button.css">
+<link rel="stylesheet" type="text/css" href="resources/css/nevigation.css">
+<link rel="stylesheet" type="text/css" href="resources/css/menu.css">
 
 </head>
 
@@ -35,18 +37,15 @@
 </tr>
 
 <td>  
-<center>
-<div style="float:center">
-<button> <a href = "index.html"> <b>HOME</b> </button> 
-<button> <a href = "#" onclick="onHyperlinkClick('about')"> <b>ABOUT US</b> </button>
-<button> <a href = "#" onclick="onHyperlinkClick('about')"> <b>MESSAGE</b> </button>
-<button> <a href = "#" onclick="onHyperlinkClick('about')"> <b>ADMISSION</b> </button>
-<button> <a href = "#" onclick="onHyperlinkClick('gallery')"> <b>GALLERY</b> </button> 
-<button> <a href = "#" onclick="onHyperlinkClick('contact')"> <b>CONTACT US</b> </button>
-
-</center>
-</td>
+<div class="btn-group">
+  <button class="button" href = "index.html">HOME</button>
+  <button class="button" href = "#" onclick="onHyperlinkClick('about')">ABOUT US</button>
+  <button class="button" href = "#" onclick="onHyperlinkClick('about')">MESSAGE</button>
+  <button class="button" href = "#" onclick="onHyperlinkClick('about')">ADMISSION</button>
+  <button class="button" href = "#" onclick="onHyperlinkClick('gallery')">GALLERY</button>
+  <button class="button" href = "#" onclick="onHyperlinkClick('contact')">CONTACT US</button>
 </div>
+</td>
 <br/>
 
 
@@ -55,20 +54,17 @@
 <td bgcolor = "#aaa" width = "20%"> 
 
 
-<p><b><em><center>
-<span style = "color:red">FACILITIES</span>
-</center>
-</em></b></p>
-<hr>
-<b>
-<a href = "views/Transportation/Transportation.html">Transportation <br/>
-<a href = "views/Sports/Sports.html">Sports<br/>
-<a href = "views/faculty/faculty.html">Qualified Teachers <br/>
-<a href = "views/home/home.html">Library <br/>
-<a href = "views/home/home.html">Hostel <br/>
-<a href = "views/home/home.html">Canteen <br/>
-<a href = "views/home/home.html">Digital Class Room <br/>
-</b>
+<ul>
+  <li><a class="active"><center>FACILITIES</center></a></li>
+  <li><a href="views/Transportation/Transportation.html">Transportation</a></li>
+  <li><a href="views/Sports/Sports.html">Sports</a></li>
+  <li><a href="views/faculty/faculty.html">Qualified Teachers</a></li>
+  <li><a href="views/home/home.html">Library</a></li>
+  <li><a href="views/home/home.html">Hostel</a></li>
+  <li><a href="views/home/home.html">Canteen</a></li>
+  <li><a href="views/home/home.html">Digital Class Room</a></li>
+</ul>
+<br/>
 
 
 <td bgcolor = "#b5dcb3" width = "60%" id = 'content'>
