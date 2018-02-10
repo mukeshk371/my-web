@@ -5,13 +5,13 @@ ul {
     padding: 0;
     width: 100%;
     background-color: white;
-    font-family: Courier New;
+    font-family: Georgia;
 }
 
 li a {
     display: block;
     color: black;
-	padding: 13px 16px;
+	padding: 10px 16px;
     text-decoration: none;
 }
 
@@ -21,6 +21,6 @@ li a.active {
 }
 
 li a:hover:not(.active) {
-    background-color: red;
+    background-color: aqua;
     color: white;
 }
