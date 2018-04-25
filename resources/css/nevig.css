@@ -1,5 +1,6 @@
 
 .navbar {
+    width: 100%;
     overflow: hidden;
     background-color: green;
     font-family: Georgia;
