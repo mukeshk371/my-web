@@ -56,9 +56,10 @@
 	  		width: 100%;
 	  	}
 
-	    .images {
+	    .images, .images img {
 	  		float: center;
 	  		width: 100%;
+	  		height: 40%;
 	  	}
 
 
@@ -71,10 +72,11 @@
 
 	  	.important {
 	  		float: center;
+	  		position: relative;
 	  		width: 100%;
 	  	}
 
-	  	.dropdown-content,{
+	  	.dropdown, .dropbtn, .dropdown-content {
 	  		float: center;
 	  		width: 100%;
 	  	}
